@@ -5,8 +5,8 @@ export const Intro = styled(Grid)`
 height: calc(100vh - 200px);
 
 h1 {
-   //font-family: 'Space Grotesk', sans-serif;
    font-family: 'Bricolage Grotesque', sans-serif;
+   font-size: 24px;
 }
 
 .introduction {
@@ -65,4 +65,86 @@ img {
    --_p: calc(var(--g)/2);
    --_i: 0s;
  }
+`
+
+export const ToolkitDiv = styled.div`
+
+.three h1 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.5em;
+  padding-bottom: 15px;
+  position: relative;
+}
+.three h1:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5px;
+  width: 55px;
+  background-color: #111;
+}
+.three h1:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  height: 1px;
+  width: 95%;
+  max-width: 255px;
+  background-color: #333;
+}
+// header {
+//   width: 100%;
+//   display: inline-block;
+//   flex-direction: column;
+//   align-items: center;
+// }
+// header h1 {
+//   // position: relative;
+//   // left: 10%;
+//   // width: 90%;
+//   font-size: 60px;
+//   font-weight: 600;
+//   color: transparent;
+//   -webkit-background-clip: text;
+//   background-clip: text;   
+//   font-family: 'Bricolage Grotesque', sans-serif;
+//   font-size: 24px;
+// }
+// header .header-1{
+//   background-image: repeating-radial-gradient(closest-side at 20px 20px,#553c9a, #ee4b2b, #553c9a);
+// }
+// h1 {
+//   font-family: 'Bricolage Grotesque', sans-serif;
+//   font-size: 24px;
+//   background-image: repeating-radial-gradient(closest-side at 20px 20px,#553c9a, #ee4b2b, #553c9a);
+// }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+  text-align: center;
+}
+
+li:not(:first-child) {
+  margin-left: 100px;
+}
+
+p {
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 25px;
+  margin: 5px 0px;
+}
+
 `

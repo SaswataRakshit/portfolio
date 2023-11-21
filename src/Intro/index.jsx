@@ -27,24 +27,9 @@ const Introduction = () => {
                     </Grid>
                 </Paper>
             </Intro>
-            <ToolKit />
-            {/* <Grid container justifyContent={'center'} alignContent={'center'} style={{ height: 200 }} spacing={3}>
-                <Grid item lg={2}>
-                    React
-                </Grid>
-                <Grid item lg={2}>
-                    Redux
-                </Grid>
-                <Grid item lg={2}>
-                    Javascript
-                </Grid>
-                <Grid item lg={2}>
-                    HTML
-                </Grid>
-                <Grid item lg={2}>
-                    CSS
-                </Grid>
-            </Grid> */}
+            <Grid container justifyContent={'center'} alignContent={'center'} style={{ height: 200 }} spacing={3}>
+                <ToolKit />
+            </Grid>
         </>
     )
 }
