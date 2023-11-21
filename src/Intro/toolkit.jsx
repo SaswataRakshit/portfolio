@@ -4,7 +4,7 @@ const ToolKit = () => {
     return (
         <div>
             <h1>My ToolKit</h1>
-            <ul class="skills">
+            <ul style={{ display: 'inline' }}>
                 <li><img src={require('../images/react.svg')} alt="" />React</li>
                 <li>Angular</li>
                 <li><img src={require('../images/css.png')} alt="" />CSS3</li>
