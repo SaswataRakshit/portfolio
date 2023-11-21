@@ -86,17 +86,18 @@ h4 {
 
 @keyframes typing {
   0.0000%, 27.3488% { content: ""; }
-  1.1395%, 26.2093% { content: "U"; }
-  2.2791%, 25.0698% { content: "UI"; }
-  3.4186%, 23.9302% { content: "UI D"; }
-  4.5581%, 22.7907% { content: "UI De"; }
-  5.6977%, 21.6512% { content: "UI Dev"; }
-  6.8372%, 20.5116% { content: "UI Deve"; }
-  7.9767%, 19.3721% { content: "UI Devel"; }
-  9.1163%, 18.2326% { content: "UI Develo"; }
-  11.2558%, 16.0930% { content: "UI Develop"; }
-  12.2558%, 15.0930% { content: "UI Develope"; }
-  13.2558%, 14.0930% { content: "UI Developer"; }
+  1.1395%, 26.2093% { content: "W"; }
+  2.2791%, 25.0698% { content: "We"; }
+  3.2791%, 24.0698% { content: "Web"; }
+  3.4186%, 23.9302% { content: "Web D"; }
+  4.5581%, 22.7907% { content: "Web De"; }
+  5.6977%, 21.6512% { content: "Web Dev"; }
+  6.8372%, 20.5116% { content: "Web Deve"; }
+  7.9767%, 19.3721% { content: "Web Devel"; }
+  9.1163%, 18.2326% { content: "Web Develo"; }
+  11.2558%, 16.0930% { content: "Web Develop"; }
+  12.2558%, 15.0930% { content: "Web Develope"; }
+  13.2558%, 15.0930% { content: "Web Developer"; }
 
   30.7674%, 51.2791% { content: ""; }
   31.9070%, 50.1395% { content: "C"; }
