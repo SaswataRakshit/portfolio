@@ -168,6 +168,7 @@ export const NavigationBar = styled.div`
 margin-left: 20px;
 position: fixed;
 top: 40%;
+z-index: 100;
 
 .nav{
     padding-left: 4px;

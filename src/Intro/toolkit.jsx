@@ -24,47 +24,47 @@ const ToolKit = () => {
             <ul style={{ display: 'inline' }}>
                 <li>
                     <img src={reactIcon} alt="" style={{ width: 50, height: 50 }} />
-                    <p>React</p>
+                    <p className="skill">React</p>
                 </li>
                 <li>
                     <img src={angularIcon} alt="" style={{ width: 50, height: 50 }} />
-                    <p>Angular</p>
+                    <p className="skill">Angular</p>
                 </li>
                 <li>
                     <img src={Css} alt="" style={{ width: 50, height: 50 }} />
-                    <p>CSS3</p>
+                    <p className="skill">CSS3</p>
                 </li>
                 <li>
                     <img src={htmlIcon} alt="" style={{ width: 50, height: 50 }} />
-                    <p>HTML5</p>
+                    <p className="skill">HTML5</p>
                 </li>
                 <li>
                     <img src={javaScriptIcon} alt="" style={{ width: 50, height: 50 }} />
-                    <p>Javascript</p>
+                    <p className="skill">Javascript</p>
                 </li>
                 <li>
                     <img src={jqueryIcon} alt="" style={{ width: 50, height: 50 }} />
-                    <p>jQuery</p>
+                    <p className="skill">jQuery</p>
                 </li>
                 <li>
                     <img src={reduxIcon} alt="" style={{ width: 50, height: 50 }} />
-                    <p>Redux</p>
+                    <p className="skill">Redux</p>
                 </li>
                 <li>
                     <img src={require('../images/mfe-modified.png')} alt="" style={{ width: 50, height: 50 }} />
-                    <p>Micro Frontend</p>
+                    <p className="skill">Micro Frontend</p>
                 </li>
                 <li>
                     <img src={lessIcon} alt="" style={{ width: 50, height: 50 }} />
-                    <p>Less</p>
+                    <p className="skill">Less</p>
                 </li>
                 <li>
                     <img src={sassIcon} alt="" style={{ width: 50, height: 50 }} />
-                    <p>Sass</p>
+                    <p className="skill">Sass</p>
                 </li>
                 <li>
                     <img src={typescriptIcon} alt="" style={{ width: 50, height: 50 }} />
-                    <p>Typescript</p>
+                    <p className="skill">Typescript</p>
                 </li>
             </ul>
         </ToolkitDiv>
