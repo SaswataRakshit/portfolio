@@ -1,7 +1,5 @@
 import { Grid } from "@mui/material";
 import styled from "styled-components";
-import backgroundImg from '../images/vecteezy_gold-brush-stroke-for-design_9874689.png'
-import img from '../images/New_Portfolio-1.png'
 
 export const Intro = styled(Grid)` 
 height: calc(100vh - 200px);
@@ -12,22 +10,43 @@ height: calc(100vh - 200px);
 }
 
 .introduction {
-   font-family: 'Patrick Hand', cursive;
-    font-size: 22px;
+  font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
     text-align: justify !important;
     text-justify: inter-word;
     color: #696969;
-
 }
 
 .bold {
-   font-family: 'Patrick Hand', cursive;
-   font-size: 23px;
+  font-family: 'Open Sans', sans-serif;
+   font-size: 26px;
    font-weight: 600;
    color: #696969; 
 }
 
-img {
+@media only screen and (max-width: 1500px) {
+  .introduction {
+    font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      text-align: justify !important;
+      text-justify: inter-word;
+      color: #696969;
+  }
+
+  .bold {
+     font-family: 'Open Sans', sans-serif;
+     font-size: 18px;
+     font-weight: 600;
+     color: #696969; 
+  }
+
+  .image {
+    height: 300px;
+    width: 250px;
+  }
+}
+
+.image {
    --b: 8px;  /* border thickness*/
    --s: 60px; /* size of the corner*/
    --g: 14px; /* the gap*/
@@ -47,7 +66,7 @@ img {
      background-position .3s var(--_i,.3s),
      background-size .3s calc(.3s - var(--_i,.3s));
  }
- img.alt {
+ .image.alt {
    background-image:
      conic-gradient(from 180deg at top    var(--b) right var(--b),#0000 25%,var(--c) 0),
      conic-gradient(from   0deg at bottom var(--b) left  var(--b),#0000 25%,var(--c) 0);
@@ -55,127 +74,16 @@ img {
      calc(100% - var(--_p,0%)) var(--_p,0%),
      var(--_p,0%) calc(100% - var(--_p,0%));
  }
- img:hover {
+ .image:hover {
    background-size: calc(100% - var(--g)) calc(100% - var(--g));
    --_p: calc(var(--g)/2);
    --_i: 0s;
  }
 `
 
-export const ToolkitDiv = styled.div`
-
-// .three h1 {
-//   font-family: 'Bricolage Grotesque', sans-serif;
-//   font-size: 28px;
-//   font-weight: 500;
-//   letter-spacing: 0;
-//   line-height: 1.5em;
-//   padding-bottom: 15px;
-//   position: relative;
-// }
-// .three h1:before {
-//   content: "";
-//   position: absolute;
-//   left: 0;
-//   bottom: 0;
-//   height: 5px;
-//   width: 55px;
-//   background-color: #111;
-// }
-// .three h1:after {
-//   content: "";
-//   position: absolute;
-//   left: 0;
-//   bottom: 2px;
-//   height: 1px;
-//   width: 95%;
-//   max-width: 255px;
-//   background-color: #333;
-// }
-// h1 {
-//   position: relative;
-//   background-image: url(${backgroundImg});
-// }
-
-// h1::after{
-//   content: "";
-//   position: absolute;
-//   background-image: url(${backgroundImg});
-//   opacity: 30;
-//     // background-color: #F0F8FF;
-//     // -webkit-box-shadow: 0 0 8px rgb(192 221 244);
-//     // box-shadow: 0 0 8px rgb(192 221 244);
-//     height: 18px;
-//     left: 5px;
-//     // bottom: 0;
-//     width: 180px;
-//     // z-index: -1;
-// }
-
-h1{
-  background: url(${backgroundImg}) 0 0 repeat-x;
-  position:relative;
-  display: inline-block;
-  margin:0 25px;
-  padding:0 10px;
-  height:40px;
-}
-
-h1:before,h1:after {
-  content:'';
-  display: inline-block;
-  position:absolute;
-  top: 0;
-  right: -20px;
-  width: 20px;
-  height: 100%;
-  background:inherit;
-  background-position:100% 100%;
-}
-h1:before {
-  left:-20px;
-  background-position: 0 100%;
-}
-
-// h2{
-//   //font-size: 9.0em;
-//   text-transform: uppercase;
-//   font-family: 'Bricolage Grotesque', sans-serif;;
-//   background: url(https://www.adorama.com/alc/wp-content/uploads/2021/05/bird-wings-flying-feature.gif);
-//   //background: url(${backgroundImg});
-//   background-size: cover;
-//   -webkit-background-clip: text;
-//   -webkit-text-fill-color: transparent;
-// }
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333333;
-}
-
-li {
-  float: left;
-  text-align: center;
-}
-
-li:not(:first-child) {
-  margin-left: 100px;
-}
-
-.skill {
-  font-family: 'Nanum Pen Script', cursive;
-  font-size: 25px;
-  margin: 5px 0px;
-}
-
-`
-
 export const SvgDiv = styled.div`
 position:relative;
-text-align:center;
+// text-align:center;
 background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
 color:white;
 
@@ -185,7 +93,13 @@ color:white;
   height:15vh;
   margin-bottom:-7px; /*Fix for safari gap*/
   min-height:100px;
-  max-height:150px;
+  max-height:200px;
+}
+
+@media only screen and (max-width: 1500px) {
+  .waves {
+    height:100vh;
+  }
 }
 
 /* Animation */
@@ -230,4 +144,142 @@ color:white;
     font-size:24px;
   }
 }
+`
+
+export const SkillDiv = styled.div`
+  width: 80%;
+  max-width: 960px;
+  height: 200px;
+  // height: $totalChartCount * ($chartBarHeight + $chartBarGap) + ($chartCount * ($chartGap + $titleHeight));
+  margin: auto;
+  position: relative;
+
+  .lines {
+    height: 100%;
+    position: relative;
+  }
+  .line {
+    height: inherit;
+    width: 2px;
+  
+    position: absolute;
+  
+    background: rgba(#eee, 0.6);
+  
+    &.l--0 {
+      left: 0;
+    }
+    &.l--25 {
+      left: 25%;
+    }
+    &.l--50 {
+      left: 50%;
+    }
+    &.l--75 {
+      left: 75%;
+    }
+    &.l--100 {
+      left: calc(100% - 1px);
+    }
+  }
+  .line__label {
+    display: block;
+    width: 100px;
+    text-align: center;
+  
+    position: absolute;
+    bottom: -20px;
+    right: -50px;
+  
+    &.title {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+  
+  .charts {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+  
+  .chart {
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+  }
+  
+  .chart__title {
+    display: block;
+    margin: 0 0 10px;
+  
+    font-weight: bold;
+  
+    opacity: 0;
+  
+    animation: 1s anim-lightspeed-in ease forwards;
+  
+    .chart--dev & {}
+    .chart--prod & {
+      animation-delay: 3.3s;
+    }
+    .chart--design & {
+      animation-delay: 4.5s;
+    }
+  }
+  
+  .chart--horiz {
+    overflow: hidden;
+    list-style:none;
+  }
+  
+  .chart__bar {
+    height: 30px;
+    margin-bottom: 10px;
+    padding-left: 8px;
+    background: linear-gradient(90deg, rgba(255,228,172,1) 0%, rgba(207,141,0,1) 100%);
+    border-radius: 15px;
+    opacity: 0;
+  
+    animation: 1s anim-lightspeed-in ease forwards;
+  
+    .chart--dev & {
+      @include stagger-anim-delay(11, 0.5s, 0.2s);
+    }
+    .chart--prod & {
+      @include stagger-anim-delay(2, 3.8s, 0.2s);
+    }
+    .chart--design & {
+      @include stagger-anim-delay(4, 5s, 0.2s);
+    }
+  }
+  
+  .chart__label {
+    padding-left: 10px;
+    line-height: 30px;
+    display: flex;
+  }
+  
+  //Keyframes
+  @keyframes anim-lightspeed-in {
+    0% {
+      transform: translateX(-200%);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .skill {
+    font-family: 'Single Day', cursive;
+    font-size: 25px;
+    color: black;
+    vertical-align: super;
+    margin-left: 8px;
+  }
 `

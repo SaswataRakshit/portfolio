@@ -173,7 +173,7 @@ z-index: 100;
 .nav{
     padding-left: 4px;
     width: 23px;
-    height: 25px;
+    height: 20px;
     border-radius: 50px;
     transition: width 2s;
     background-color: #CCCCFF;
@@ -182,7 +182,7 @@ z-index: 100;
 }
 
 .nav:hover{
-    width: 150px;
+    width: 120px;
     cursor: pointer;
 }
 
