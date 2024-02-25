@@ -1,0 +1,41 @@
+{
+    "introduction": "Innovative Development with 7 years of experience, leveraging software engineering and information systems skills to deliver highly effective and creative solutions to business and technology challenges. I have good analytical and programming skills to develop IT and business solutions employing diversified technologies to increase productivity.Obtaining a challenging position as Frontend Developer, working with globally recognized organization, with expertise on mainly Frontend technologies.",
+    "timelineCards": [
+        {
+            "date": "30th October, 1994.",
+            "description": "Everyone is happy, because a Legend born",
+            "shortDescription": "at Kolkata, India.",
+            "sideContent": "I was born on 30th October, 1994 in a small family known as 'Rakshit Family' at Kolkata, West Bengal."
+        },
+        {
+            "date": "26th May, 2010.",
+            "description": "Entered into the vast world of knowledge.",
+            "shortDescription": "Successfully passed Class 10th Board examination.",
+            "sideContent": "I completed my class 10th from B.E College Model School and my overall score was 83%."
+        },
+        {
+            "date": "4th June, 2012.",
+            "description": "As per indian parents false promise, entered into the so called Freedom.",
+            "shortDescription": "Got a certificate of Final board examination.",
+            "sideContent": "I completed high school (12th Board examination) from B.E College Model School and achieved overall score of 69%."
+        },
+        {
+            "date": "30th April, 2016.",
+            "description": "Phew! Finally got to know what is called freedom of life.",
+            "shortDescription": "Graduation is completed from KIIT University and had a offer letter from 2 MNCs.",
+            "sideContent": "I have done my Graduation from Kalinga Institute of Industrial Technology, Bhubaneswar. I completed my B.TECH with 7.40 CGPA. Also from campus drive, I got offer letter from 2 MNCs."
+        },
+        {
+            "date": "18th May, 2016.",
+            "description": "Started learning about a corporate life.",
+            "shortDescription": "Joined as an Associate software enginner at Accenture, Pune.",
+            "sideContent": "I started my carrier with Accenture. Initially I got a role in Software Testing. After 2 years I got promoted as a Software Enginner and got a role of Software Developer in Test, where I started learning frontend development and use Angular 6 for one year."
+        },
+        {
+            "date": "15th April, 2019.",
+            "description": "Did an upgradation of carrier",
+            "shortDescription": "Joined as an Software enginner at Lowe's India, Bangalore.",
+            "sideContent": "I switched my carrier and joined Lowe's India, tech hub of 2nd large Home Improvement retail chain in US. I joined as a software developer and here I mostly worked on frontend and a very few backend projects. I grow here as a Senior Frontend Developer and leading a team on frontend perspective. Here I gained expertise on React, Microfrontend, Redux and so on."
+        }
+    ]
+}
