@@ -2,18 +2,11 @@ import * as React from 'react';
 
 import Drawer from '@mui/material/Drawer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { makeStyles } from '@mui/styles';
 
 import Resume from '../assets/Resume_SaswataRakshit.pdf'
 
-const useStyles = makeStyles({
-    paper: {
-        backgroundColor: "#c9c7c7 !important"
-    }
-});
-
 export default function Navbar() {
-    const classes = useStyles()
+    //const classes = useStyles()
     const [state, setState] = React.useState({
         top: false
     });
@@ -41,7 +34,7 @@ export default function Navbar() {
         <div style={{ position: 'fixed', zIndex: 100 }}>
             <FontAwesomeIcon onClick={toggleDrawer('top', true)} icon="fa-solid fa-bars" beatFade={beat} style={{ marginLeft: '20px', marginTop: '15px' }} />
             <Drawer
-                classes={{ paper: classes.paper }}
+                // classes={{ paper: classes.paper }}
                 anchor={'top'}
                 open={state['top']}
                 onClose={toggleDrawer('top', false)}

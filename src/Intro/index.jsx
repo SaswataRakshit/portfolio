@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Grid, Paper } from "@mui/material";
-import ScrollAnimation from 'react-animate-on-scroll';
 import { Intro, SvgDiv } from "./style";
 import { Header } from "../shared/shared.style";
 import backgroundImg from '../assets/images/vecteezy_gold-brush-stroke-for-design_9874689.png'
@@ -15,17 +14,12 @@ const Introduction = ({ introRef }) => {
             if (!showSkills) {
                 setShowSkills(true)
             }
-        }, 3000)
+        }, 2000)
 
         return () => {
             clearInterval(showSkillTime)
         }
     }, [])
-
-    const afterLoad = () => {
-        console.log('calledddd');
-        setShowSkills(true)
-    }
 
     return (
         <div ref={introRef}>
@@ -35,17 +29,16 @@ const Introduction = ({ introRef }) => {
                         <Paper style={{ padding: 20, marginLeft: 20 }}>
                             <Grid container>
                                 <Grid item lg={6} xs={8} style={{ textAlign: 'center' }}>
-                                    <ScrollAnimation animateIn="fadeIn" afterAnimatedIn={afterLoad}>
-                                        <Header width={'250px'} top={'-8px'} left={'100px'} smallScreenLeft={'50px'}>
-                                            <h1 className="heading">A Bit About Me</h1>
-                                            <img src={backgroundImg} className="backgroundImg" />
-                                        </Header>
-                                        <p className="introduction">
-                                            An innovative Web-Developer with <span className="bold">8 years</span> of experience based in Bangalore, India.
-                                            Obtaining a challenging position as a <span className="bold">Senior Frontend Developer</span>, working with <span className="bold">Lowe's</span>.
-                                        </p>
-                                        <p className="introduction">I'm passionate about cutting-edge, pixel-perfect, beautiful interfaces and intuitively implemented UX.</p>
-                                    </ScrollAnimation>
+                                    {/* <ScrollAnimation animateIn="fadeIn" afterAnimatedIn={afterLoad}> */}
+                                    <Header width={'250px'} top={'-8px'} left={'100px'} smallScreenLeft={'50px'}>
+                                        <h1 className="heading">A Bit About Me</h1>
+                                        <img src={backgroundImg} className="backgroundImg" />
+                                    </Header>
+                                    <p className="introduction">
+                                        An innovative Web-Developer with <span className="bold">8 years</span> of experience based in Bangalore, India.
+                                        Obtaining a challenging position as a <span className="bold">Senior Frontend Developer</span>, working with <span className="bold">Lowe's</span>.
+                                    </p>
+                                    <p className="introduction">I'm passionate about cutting-edge, pixel-perfect, beautiful interfaces and intuitively implemented UX.</p>
                                 </Grid>
                                 <Grid item lg={6} xs={4} style={{ textAlign: 'right' }}>
                                     <img src={require('../assets/images/porfolio2.png')} style={{ borderRadius: '5%' }} className="image" />
