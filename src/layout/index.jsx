@@ -3,7 +3,7 @@ import React, { useRef } from 'react';
 import NavBar from './downloadResume'
 
 import Home from '../home';
-import Introduction from '../intro/index.jsx';
+import Introduction from '../Introduction';
 import TimeLine from '../timeline';
 import Projects from '../projects';
 import Contact from '../contact';
