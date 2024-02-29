@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Grid, Paper } from "@mui/material";
 import { Intro, SvgDiv } from "./style";
 import { Header } from "../shared/shared.style";
-import backgroundImg from '../assets/images/vecteezy_gold-brush-stroke-for-design_9874689.png'
 import Skills from "./skills";
 import { useEffect } from "react";
 
@@ -32,7 +31,6 @@ const Introduction = ({ introRef }) => {
                                     {/* <ScrollAnimation animateIn="fadeIn" afterAnimatedIn={afterLoad}> */}
                                     <Header width={'250px'} top={'-8px'} left={'100px'} smallScreenLeft={'50px'}>
                                         <h1 className="heading">A Bit About Me</h1>
-                                        <img src={backgroundImg} className="backgroundImg" />
                                     </Header>
                                     <p className="introduction">
                                         An innovative Web-Developer with <span className="bold">8 years</span> of experience based in Bangalore, India.
