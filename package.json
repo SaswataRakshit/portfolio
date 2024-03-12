@@ -10,14 +10,6 @@
     "@babel/core": "^7.16.0",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
-    "@fortawesome/fontawesome-svg-core": "^6.4.0",
-    "@fortawesome/free-brands-svg-icons": "^6.4.0",
-    "@fortawesome/free-regular-svg-icons": "^6.4.0",
-    "@fortawesome/free-solid-svg-icons": "^6.4.0",
-    "@fortawesome/react-fontawesome": "^0.2.0",
-    "@mui/icons-material": "^5.15.7",
-    "@mui/lab": "^5.0.0-alpha.162",
-    "@mui/material": "^5.15.6",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",
     "@svgr/webpack": "^5.5.0",
     "@tsparticles/engine": "^3.2.1",
@@ -151,5 +143,16 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "react-infinite-scroll-component": "^6.1.0",
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
+    "@fortawesome/free-regular-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@mui/icons-material": "^5.15.7",
+    "@mui/lab": "^5.0.0-alpha.162",
+    "@mui/material": "^5.15.6"
   }
 }

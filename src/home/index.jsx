@@ -4,12 +4,14 @@ import Photo from "./photo";
 import About from "./about";
 import Navigation from "./navigation";
 
-const Home = ({ handleClickIntro, handleClickTimeline, handleClickProject, handleClickContact }) => {
+const Home = ({ handleClickIntro, handleClickTimeline, handleClickProject, handleClickContact, showNav }) => {
     return (
         <Grid container style={{ backgroundImage: 'linear-gradient(#cfcfcf, #cfcfcf, #dfdfdf, #e4e4e4, #fcfcfc, #ffffff)' }}>
             <Grid item lg={1}>
-                <Navigation handleClickIntro={handleClickIntro} handleClickTimeline={handleClickTimeline}
-                    handleClickProject={handleClickProject} handleClickContact={handleClickContact} />
+                {showNav &&
+                    <Navigation handleClickIntro={handleClickIntro} handleClickTimeline={handleClickTimeline}
+                        handleClickProject={handleClickProject} handleClickContact={handleClickContact} />
+                }
             </Grid>
             <Grid item lg={4}
             //style={{ backgroundImage: 'linear-gradient(#cfcfcf, #cfcfcf, #dfdfdf, #e4e4e4, #fcfcfc)' }}
